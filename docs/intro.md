@@ -2,6 +2,5 @@
 sidebar_position: 1
 ---
 
-# 自我介绍
+# Hello
 
-我是某某某。
