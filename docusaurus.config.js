@@ -84,6 +84,11 @@ const config = {
             label: '笔记',
           },
           {to: '/blog', label: '博客', position: 'left'},
+          // {
+          //   to: '/website',
+          //   label: 'Links',
+          //   position: 'left',
+          // },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -96,11 +101,32 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title:'Website',
+            items:[
+              {
+                label:'Home',
+                to: '/',
+              },
+              {
+                label:'Study',
+                to: '/docs/intro',  
+              },
+              {
+                label:'Blog',
+                to: '/blog',
+              }
+            ],
+          },
+          {
+            title: 'Tech Links',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Python',
+                href: 'https://www.w3school.com.cn/python/index.asp',
+              },
+              {
+                label: 'Java',
+                href: 'https://zq99299.github.io/java-tutorial/',
               },
             ],
           },
@@ -125,8 +151,12 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: '源代码',
+                href: 'https://github.com/FUSHENG1221/BlogRepository',
+              },
+              {
+                label: '北林计协',
+                href: 'https://bljx2022project.github.io/bljx_blog/',
               },
               {
                 label: 'GitHub',
