@@ -37,7 +37,21 @@ const config = {
     defaultLocale: 'zh-Hans',   // 设置语言 zh-Hans是中文
     locales: ['zh-Hans'],
   },
-
+  themes: [
+    // ... Your other themes.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        // language: ["en", "zh"],
+        // ```
+      },
+    ],
+  ],
   presets: [
     [
       'classic',    // 主题，默认
@@ -65,7 +79,7 @@ const config = {
       }),
     ],
   ],
-
+  
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

@@ -39,3 +39,36 @@ For readability concerns, you should choose a lighter palette in dark mode.
   --ifm-color-primary-lightest: #e0f6fd;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.markdown h1:first-child{
+  color:var(--ifm-color-primary);
+}
+
+.markdown>h2 {
+  border-bottom: 1px solid var(--ifm-color-primary);
+  font-size: 1.7em;
+  margin-top: 1rem;
+}
+
+.markdown>h2:before {
+  margin-right: 0.4em;
+  background: var(--ifm-color-primary);
+  color: transparent;
+  content: ".";
+}
+
+.markdown>h3 {
+  border-left: 4px solid var(--ifm-color-primary-light);
+  font-size: 1.5em;
+  padding-left: 1rem;
+}
+
+code {
+    /* background-color: var(--ifm-code-background); */
+    background-color: #2e80ec2d;
+    border: 0.1rem solid rgba(174,191,255,.794);
+    border-radius: var(--ifm-code-border-radius);
+    font-family: var(--ifm-font-family-monospace);
+    font-size: var(--ifm-code-font-size);
+    padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
+}
