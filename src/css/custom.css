@@ -72,3 +72,18 @@ code {
     font-size: var(--ifm-code-font-size);
     padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
 }
+
+.pagination-nav__link {
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: var(--ifm-pagination-nav-border-radius);
+  display: block;
+  height: 100%;
+  line-height: var(--ifm-heading-line-height);
+  padding: var(--ifm-global-spacing);
+  transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+.pagination-nav__link:hover {
+  box-shadow: 10px 10px 5px var(--ifm-color-primary-lighter);
+  border: 2px solid var(--ifm-color-primary);
+}
